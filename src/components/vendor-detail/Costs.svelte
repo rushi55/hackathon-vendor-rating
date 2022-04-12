@@ -34,7 +34,7 @@
 	</div>
 	<div class="flex-grow as">
 		<div class="flex-grow ml-5">
-			<h1 class="text-xl ml-7">Material Costs</h1>
+			<h1 class="text-xl ml-7">Material Costs (Jan 1, 2022 - Current)</h1>
 			<Chart
 				{data}
 				type="bar"
