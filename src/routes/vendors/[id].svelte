@@ -1,34 +1,13 @@
 <script>
-	import Chart from 'svelte-frappe-charts'
-	import DaisyuiColors from 'daisyui/src/colors/themes'
 	import { goto } from '$app/navigation'
+	import Resources from '../../components/vendor-detail/Resources.svelte'
+	import Claims from '../../components/vendor-detail/Claims.svelte'
+	import Costs from '../../components/vendor-detail/Costs.svelte'
+	import Delays from '../../components/vendor-detail/Delays.svelte'
+	import Overview from '../../components/vendor-detail/Overview.svelte'
 
 	export let vendor
 	export let tab
-
-	const getRatingStyle = ({ rating }) => {
-		if (rating <= 40) return 'text-error'
-		if (rating >= 70) return 'text-success'
-		return 'text-warning'
-	}
-
-	let data = {
-		labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
-		datasets: [
-			{
-				name: 'Jobs',
-				values: [10, 12, 3, 9, 8, 15, 9]
-			},
-			{
-				name: 'Claims',
-				values: [1, 1, 0, 0, 2, 0, 0].reverse()
-			},
-			{
-				name: 'Delays',
-				values: [1, 1, 0, 0, 2, 0, 0]
-			}
-		]
-	}
 
 	const tabs = ['overview', 'delays', 'costs', 'claims', 'resources', 'documents']
 </script>
@@ -48,7 +27,26 @@
 			class="hover:stroke-white"><path d="M19 12H6M12 5l-7 7 7 7" /></svg
 		></button
 	>
-	<h1 class="text-4xl mb-7">{vendor.name}</h1>
+	<div class="flex justify-between">
+		<h1 class="text-4xl mb-7">{vendor.name}</h1>
+		<h4 class="flex">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="#000000"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				><path
+					d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"
+				/><circle cx="12" cy="10" r="3" /></svg
+			> Prescott, AZ
+		</h4>
+	</div>
+
 	<div class="flex">
 		<div class="tabs">
 			{#each tabs as t}
@@ -62,63 +60,19 @@
 
 	<div class="mx-3">
 		{#if tab === 'overview'}
-			<div class="container mx-auto pt-2 flex">
-				<div class="stats stats-vertical shadow">
-					<div class="stat">
-						<div class="stat-title">Jobs Completed</div>
-						<div class="stat-value">45</div>
-						<div class="stat-desc">Jan 1st - April 1st</div>
-					</div>
-
-					<div class="stat">
-						<div class="stat-title">Rating</div>
-						<div
-							class="radial-progress {getRatingStyle({ rating: vendor.rating })} my-1"
-							style="--value:{vendor.rating};"
-						>
-							{vendor.rating}%
-						</div>
-						<div class="stat-desc">+22% last month</div>
-					</div>
-
-					<div class="stat">
-						<div class="stat-title">Monthly Resources</div>
-						<div class="stat-value">~9</div>
-						<div class="stat-desc">↘︎ 1 (-10%)</div>
-					</div>
-					<div class="stat">
-						<div class="stat-title">Claims</div>
-						<div class="stat-value">12</div>
-						<div class="stat-desc">↗︎ 2 (+20%)</div>
-					</div>
-				</div>
-				<div class="flex-grow as">
-					<h1 class="text-xl ml-7">Weekly Performance</h1>
-					<Chart
-						{data}
-						type="line"
-						height={500}
-						lineOptions={{ regionFill: 1 }}
-						colors={[
-							DaisyuiColors['[data-theme=winter]'].success,
-							DaisyuiColors['[data-theme=winter]'].warning,
-							DaisyuiColors['[data-theme=winter]'].error
-						]}
-					/>
-				</div>
-			</div>
+			<Overview {vendor} />
 		{/if}
 		{#if tab === 'delays'}
-			<div>delays</div>
+			<Delays />
 		{/if}
 		{#if tab === 'costs'}
-			<div>costs</div>
+			<Costs />
 		{/if}
 		{#if tab === 'claims'}
-			<div>claims</div>
+			<Claims />
 		{/if}
 		{#if tab === 'resources'}
-			<div>resources</div>
+			<Resources />
 		{/if}
 		{#if tab === 'documents'}
 			<div>documents</div>

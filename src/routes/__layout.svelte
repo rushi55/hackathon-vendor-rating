@@ -5,3 +5,4 @@
 
 <Navbar />
 <slot />
+<div class="h-10" />
