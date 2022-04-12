@@ -8,8 +8,8 @@
 
 			<div class="stat">
 				<div class="stat-title">Available Resources</div>
-				<div class="stat-value">~9</div>
-				<div class="stat-desc">↘︎ 1 (-10%)</div>
+				<div class="stat-value">~5</div>
+				<div class="stat-desc">↘︎ 1 (-20%)</div>
 			</div>
 		</div>
 	</div>
