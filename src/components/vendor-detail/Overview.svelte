@@ -34,7 +34,7 @@
 		<div class="stat">
 			<div class="stat-title">Jobs Completed</div>
 			<div class="stat-value">45</div>
-			<div class="stat-desc">Jan 1st - April 1st</div>
+			<div class="stat-desc">Jan 1st - Current</div>
 		</div>
 
 		<div class="stat">

@@ -1,5 +1,4 @@
 import type { RequestHandler } from '@sveltejs/kit'
-import { getRandomNumber } from '../../utils/getRandomNumber'
 
 type Params = { id: string }
 
@@ -20,7 +19,8 @@ export const get: RequestHandler<Params, OutputType> = async ({ params, url }) =
 	const vendor: Vendor = {
 		id: +params.id,
 		name: `Vendor ${params.id}`,
-		rating: getRandomNumber(100)
+		rating: 73
+		// rating: getRandomNumber(100)
 	}
 
 	return { body: { vendor, tab } }

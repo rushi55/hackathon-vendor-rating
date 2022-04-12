@@ -5,6 +5,7 @@
 	import Costs from '../../components/vendor-detail/Costs.svelte'
 	import Delays from '../../components/vendor-detail/Delays.svelte'
 	import Overview from '../../components/vendor-detail/Overview.svelte'
+	import Documents from '../../components/vendor-detail/Documents.svelte'
 
 	export let vendor
 	export let tab
@@ -75,7 +76,7 @@
 			<Resources />
 		{/if}
 		{#if tab === 'documents'}
-			<div>documents</div>
+			<Documents />
 		{/if}
 	</div>
 </div>

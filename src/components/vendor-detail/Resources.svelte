@@ -37,11 +37,11 @@
 							</div>
 						</td>
 						<td>
-							Zemlak, Daniel and Leannon
+							Framer
 							<br />
-							<span class="badge badge-ghost badge-sm">Desktop Support Technician</span>
+							<span class="badge badge-ghost badge-sm">3 years of experience</span>
 						</td>
-						<td>Purple</td>
+						<td>(209) 836-3636</td>
 						<th>
 							<button class="btn btn-ghost btn-xs">details</button>
 						</th>
@@ -57,11 +57,11 @@
 							</div>
 						</td>
 						<td>
-							Carroll Group
+							HVAC Installer
 							<br />
-							<span class="badge badge-ghost badge-sm">Tax Accountant</span>
+							<span class="badge badge-ghost badge-sm">1 year of experience</span>
 						</td>
-						<td>Red</td>
+						<td>(209) 836-3636</td>
 						<th>
 							<button class="btn btn-ghost btn-xs">details</button>
 						</th>
@@ -77,11 +77,11 @@
 							</div>
 						</td>
 						<td>
-							Rowe-Schoen
+							Drywall Installer
 							<br />
-							<span class="badge badge-ghost badge-sm">Office Assistant I</span>
+							<span class="badge badge-ghost badge-sm">6 years of experience</span>
 						</td>
-						<td>Crimson</td>
+						<td>(209) 836-3636</td>
 						<th>
 							<button class="btn btn-ghost btn-xs">details</button>
 						</th>
@@ -97,11 +97,11 @@
 							</div>
 						</td>
 						<td>
-							Wyman-Ledner
+							Electrician
 							<br />
-							<span class="badge badge-ghost badge-sm">Community Outreach Specialist</span>
+							<span class="badge badge-ghost badge-sm">9 years of experience</span>
 						</td>
-						<td>Indigo</td>
+						<td>(209) 836-3636</td>
 						<th>
 							<button class="btn btn-ghost btn-xs">details</button>
 						</th>
