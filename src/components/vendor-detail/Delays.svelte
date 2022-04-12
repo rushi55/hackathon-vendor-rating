@@ -60,7 +60,7 @@
 					<div>
 						<div>Anticipated Completion Date: 3/22/22</div>
 						<div>
-							Progress: <progress class="progress progress-warning w-56" value="50" max="100" />
+							Progress: <progress class="progress progress-warning w-56" value="80" max="100" />
 						</div>
 						<div>Jobs Completed: 8/10</div>
 						<div>Delays: 1</div>
